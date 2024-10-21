@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang=uk-ua>
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота №4</title>
+</head>
+<body>
+  <h1>Моя перша HTML-форма</h1>
+  <form action="https://httpbin.org/get" method="get">
+    <label for="firstname">Ім'я:</label>
+    <input type="text" id="firstname" name="firstname">
+    <br><br>
+    
+    <label for="birthdate">Дата народження:</label>
+    <input type="date" id="birthdate" name="birthdate">
+    <br><br>
+    
+    <label for="email">Імейл:</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+
+    <h3>Ваші улюблені напої?</h3>
+    <input type="checkbox" id="coffee" name="drink">
+    <label for="coffee">Кава</label>
+    <br>
+    <input type="checkbox" id="tea" name="drink">
+    <label for="tea">Чай</label>
+    <br>
+    <input type="checkbox" id="juice" name="drink">
+    <label for="juice">Сік</label>
+    <br>
+    <input type="checkbox" id="water" name="drink">
+    <label for="water">Вода</label>
+    <br><br>
+
+    <h3>Моя національність</h3>
+    <input type="radio" id="ukrainian" name="nationality">
+    <label for="ukrainian">Українець</label>
+    <br>
+    <input type="radio" id="polish" name="nationality" value="polish">
+    <label for="polish">Поляк</label>
+    <br>
+    <input type="radio" id="german" name="nationality" value="german">
+    <label for="german">Німець</label>
+    <br><br>
+
+    <label for="message">Повідомлення:</label> 
+    <textarea id="message" name="message" rows="2" cols="20"></textarea>
+    <br><br>
+    
+    <input type="submit" value="Надіслати">
+    <input type="reset" value="Очистити">
+  </form>
+  <br>
+
+  <picture>
+      <source media="(max-width: 468px)" srcset="https://picsum.photos/300/500">
+      <source media="(min-width: 468px)" srcset="https://picsum.photos/1000/400">
+      <img src="https://picsum.photos/1000/400" alt="Зображення">
+    </picture>
+</body>
+</html>
